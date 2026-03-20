@@ -1,4 +1,4 @@
-const Diary = require('../models/diary');
+const Diary = require('../models/DiaryModel');
 
 async function index(req, res) {
     try {
