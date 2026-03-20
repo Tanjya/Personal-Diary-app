@@ -13,7 +13,7 @@ async function loadEntries() {
         const formattedDate = new Date(entry.date).toLocaleDateString('en-GB');
 
         li.innerHTML = `
-            <strong>${entry.category}</strong>: 
+            <strong>${entry.category}</strong>
             ${entry.entry} (${formattedDate})
             <button data-id="${entry.id}">Delete</button>
         `;

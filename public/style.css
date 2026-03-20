@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* LIST */
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    padding: 12px;
+    border: 1px solid #964242;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+li {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* OPTIONAL: nicer buttons */
+button {
+    cursor: pointer;
+}
