@@ -10,10 +10,11 @@ async function loadEntries() {
 
     data.forEach(entry => {
         const li = document.createElement('li');
+        const formattedDate = new Date(entry.date).toLocaleDateString('en-GB');
 
         li.innerHTML = `
-            <strong>${entry.category}</strong>: 
-            ${entry.entry} (${entry.date})
+            <strong>${entry.category}</strong>
+            ${entry.entry} (${formattedDate})
             <button data-id="${entry.id}">Delete</button>
         `;
 
