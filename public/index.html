@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>Sniper Diary</title>
@@ -6,7 +6,8 @@
 </head>
 <body>
     <h1>Diary Entries</h1>
-
+    <input type="text" id="search" placeholder="Search by category or date" />
+    <ul id="entries"></ul>
     <form id="diaryForm">
         <input type="text" id="category" placeholder="Category" required />
         <input type="text" id="entry" placeholder="Entry" required />
@@ -14,6 +15,33 @@
         <button type="submit">Add Entry</button>
     </form>
     <ul id="entries"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sniper Diary</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Diary Entries</h1>
+
+        <form id="diaryForm">
+            <input type="text" id="category" placeholder="Category" required />
+            <input type="text" id="entry" placeholder="Entry" required />
+            <input type="date" id="date" required />
+            <button type="submit">Add Entry</button>
+        </form>
+
+        <input type="text" id="search" placeholder="Search by category, entry, or date" />
+
+        <ul id="entries"></ul>
+    </div>
 
     <script src="script.js"></script>
 </body>
